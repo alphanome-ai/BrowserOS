@@ -24,3 +24,6 @@ gclient.json
 .env
 .grove/
 **/resources/binaries/
+
+# Build
+.tmp/
