@@ -17,9 +17,9 @@ index 0000000000000..d2c8229f8c805
 +
 +// Appcast URLs for checking server updates
 +inline constexpr char kDefaultAppcastUrl[] =
-+    "https://cdn.browseros.com/appcast-server.xml";
++    "https://cdn.fouwser.com/appcast-server.xml";
 +inline constexpr char kAlphaAppcastUrl[] =
-+    "https://cdn.browseros.com/appcast-server.alpha.xml";
++    "https://cdn.fouwser.com/appcast-server.alpha.xml";
 +
 +// Interval between update checks
 +inline constexpr base::TimeDelta kUpdateCheckInterval = base::Minutes(15);

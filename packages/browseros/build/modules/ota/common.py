@@ -173,10 +173,10 @@ def generate_server_appcast(
     """
     if channel == "alpha":
         title = "BrowserOS Server (Alpha)"
-        appcast_url = "https://cdn.browseros.com/appcast-server.alpha.xml"
+        appcast_url = "https://cdn.fouwser.com/appcast-server.alpha.xml"
     else:
         title = "BrowserOS Server"
-        appcast_url = "https://cdn.browseros.com/appcast-server.xml"
+        appcast_url = "https://cdn.fouwser.com/appcast-server.xml"
 
     # Determine pubDate and merged artifacts
     if existing is not None and existing.version == version:
@@ -204,7 +204,7 @@ def generate_server_appcast(
             comment = f"macOS {artifact.arch}"
 
         zip_filename = f"browseros_server_{version}_{artifact.platform}.zip"
-        url = f"https://cdn.browseros.com/server/{zip_filename}"
+        url = f"https://cdn.fouwser.com/server/{zip_filename}"
 
         enclosure = ENCLOSURE_TEMPLATE.format(
             comment=comment,

@@ -39,10 +39,10 @@ AVAILABLE_MODULES = {
     "bundled_extensions": "Bundle extensions (local/CDN)",
     "chromium_replace": "Replace Chromium source files with custom versions",
     "string_replaces": "Apply branding string replacements in Chromium",
-    "patches": "Apply BrowserOS patches to Chromium",
+    "patches": "Apply Fouwser patches to Chromium",
     "configure": "Configure build with GN",
     # "series_patches": "Apply series-based patches (GNU Quilt format)",
-    "compile": "Build BrowserOS using autoninja",
+    "compile": "Build Fouwser using autoninja",
     # "universal_build": "Build, sign, package, and upload universal binary (arm64 + x64) for macOS",
     # "sign_linux": "Linux code signing (no-op)",
     "sign_macos": "Sign and notarize macOS application",
@@ -396,7 +396,7 @@ def pack_extension(
 def build_local_agent_artifacts(
     root_dir: Path, target_arch: str, server_mode: str, chrome_packer: Path
 ) -> Dict[str, Any]:
-    log("Building browseros-agent artifacts...")
+    log("Building fouwser-agent artifacts...")
     agent_monorepo = root_dir / "packages/browseros-agent"
     browseros_pkg = root_dir / "packages/browseros"
     key_dir = agent_monorepo / ".release-keys"
@@ -410,7 +410,7 @@ def build_local_agent_artifacts(
     shim_bin_dir.mkdir(parents=True, exist_ok=True)
 
     build_env = os.environ.copy()
-    build_env.setdefault("VITE_PUBLIC_BROWSEROS_API", "https://api.browseros.com")
+    build_env.setdefault("VITE_PUBLIC_BROWSEROS_API", "https://api.fouwser.com")
     build_env["GRAPHQL_SCHEMA_PATH"] = str(
         agent_monorepo / "apps/agent/schema/schema.graphql"
     )
@@ -435,8 +435,8 @@ def build_local_agent_artifacts(
             "Creating apps/server/.env.production with placeholder values (edit as needed)."
         )
         env_prod.write_text(
-            "BROWSEROS_CONFIG_URL=https://llm.browseros.com/api/browseros-server/config\n"
-            "CODEGEN_SERVICE_URL=https://api.browseros.com/graphql\nPOSTHOG_API_KEY=placeholder\n"
+            "BROWSEROS_CONFIG_URL=https://llm.fouwser.com/api/browseros-server/config\n"
+            "CODEGEN_SERVICE_URL=https://api.fouwser.com/graphql\nPOSTHOG_API_KEY=placeholder\n"
             "SENTRY_DSN=placeholder\nSENTRY_AUTH_TOKEN=placeholder\nSENTRY_ORG=placeholder\nSENTRY_PROJECT=placeholder\n",
             encoding="utf-8",
         )
