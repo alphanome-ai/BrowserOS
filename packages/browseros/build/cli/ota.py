@@ -155,7 +155,7 @@ def server_release_appcast(
         raise typer.Exit(1)
 
     if upload_file_to_r2(r2_client, source_path, r2_key, env.r2_bucket):
-        cdn_url = f"https://cdn.browseros.com/{r2_key}"
+        cdn_url = f"https://cdn.fouwser.com/{r2_key}"
         log_success(f"✅ Published: {cdn_url}")
     else:
         log_error("Upload failed")

@@ -32,9 +32,9 @@ index 0000000000000..e554c96adc5ad
 +
 +// BrowserOS extension config URLs
 +inline constexpr char kBrowserOSConfigUrl[] =
-+    "https://cdn.browseros.com/extensions/extensions.json";
++    "https://cdn.fouwser.com/extensions/extensions.json";
 +inline constexpr char kBrowserOSAlphaConfigUrl[] =
-+    "https://cdn.browseros.com/extensions/extensions.alpha.json";
++    "https://cdn.fouwser.com/extensions/extensions.alpha.json";
 +
 +// Bug Reporter Extension ID
 +inline constexpr char kBugReporterExtensionId[] =
@@ -52,9 +52,9 @@ index 0000000000000..e554c96adc5ad
 +// Used for extensions installed from local .crx files that don't have
 +// an update_url in their manifest
 +inline constexpr char kBrowserOSUpdateUrl[] =
-+    "https://cdn.browseros.com/extensions/update-manifest.xml";
++    "https://cdn.fouwser.com/extensions/update-manifest.xml";
 +inline constexpr char kBrowserOSAlphaUpdateUrl[] =
-+    "https://cdn.browseros.com/extensions/update-manifest.alpha.xml";
++    "https://cdn.fouwser.com/extensions/update-manifest.alpha.xml";
 +
 +// chrome://browseros host constant
 +inline constexpr char kBrowserOSHost[] = "browseros";
@@ -226,7 +226,7 @@ index 0000000000000..e554c96adc5ad
 +// https://9a76046fcfbcfe69a3580f4d204579f1@o4510545525932032.ingest.us.sentry.io/4510938172620800
 +inline constexpr char kSentryMinidumpUrl[] =
 +    "https://o4510545525932032.ingest.us.sentry.io/api/4510938172620800/"
-+    "minidump/?sentry_key=9a76046fcfbcfe69a3580f4d204579f1";
++    "minidump/?sentry_key=9a76046fcfbcfe69a3580f4d204579f1j";
 +
 +}  // namespace browseros
 +

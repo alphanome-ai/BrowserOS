@@ -201,7 +201,7 @@ class Context:
     # App names - will be set based on platform
     CHROMIUM_APP_NAME: str = ""
     BROWSEROS_APP_NAME: str = ""
-    BROWSEROS_APP_BASE_NAME: str = "BrowserOS"  # Base name without extension
+    BROWSEROS_APP_BASE_NAME: str = "Fouwser"  # Base name without extension
 
     # Third party
     SPARKLE_VERSION: str = "2.7.0"
@@ -425,8 +425,8 @@ class Context:
 
     def get_extensions_manifest_url(self) -> str:
         """Get CDN URL for bundled extensions update manifest"""
-        # return "https://cdn.browseros.com/extensions/update-manifest.xml"
-        return "https://cdn.browseros.com/extensions/update-manifest.alpha.xml"
+        # return "https://cdn.fouwser.com/extensions/update-manifest.xml"
+        return "https://cdn.fouwser.com/extensions/update-manifest.alpha.xmlj"
 
     def get_entitlements_dir(self) -> Path:
         """Get entitlements directory"""

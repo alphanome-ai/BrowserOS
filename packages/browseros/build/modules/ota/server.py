@@ -214,7 +214,7 @@ class ServerOTAModule(CommandModule):
 
         log_info("\nArtifact URLs:")
         for artifact in signed_artifacts:
-            log_info(f"  https://cdn.browseros.com/server/{artifact.zip_path.name}")
+            log_info(f"  https://cdn.fouwser.com/server/{artifact.zip_path.name}")
 
         log_info(f"\nAppcast saved to: {appcast_path}")
         log_info("\n📋 Next step: Run 'browseros ota server release-appcast' to make the release live")

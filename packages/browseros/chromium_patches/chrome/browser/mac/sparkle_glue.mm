@@ -32,7 +32,7 @@ index 0000000000000..25a2dd2d5a578
 +namespace {
 +
 +NSString* GetArchitectureSpecificFeedURL() {
-+  const char* kBaseURL = "https://cdn.browseros.com/";
++  const char* kBaseURL = "https://cdn.fouwser.com/";
 +
 +  if (base::SysInfo::OperatingSystemArchitecture() == "x86_64") {
 +    return [NSString stringWithFormat:@"%sappcast-x86_64.xml", kBaseURL];
