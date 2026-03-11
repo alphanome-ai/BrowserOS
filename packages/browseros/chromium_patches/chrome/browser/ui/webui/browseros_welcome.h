@@ -3,7 +3,7 @@ new file mode 100644
 index 0000000000000..89503c57538ad
 --- /dev/null
 +++ b/chrome/browser/ui/webui/browseros_welcome.h
-@@ -0,0 +1,356 @@
+@@ -0,0 +1,95 @@
 +#ifndef CHROME_BROWSER_UI_WEBUI_BROWSEROS_WELCOME_H_
 +#define CHROME_BROWSER_UI_WEBUI_BROWSEROS_WELCOME_H_
 +
