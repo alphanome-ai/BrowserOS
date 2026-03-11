@@ -56,8 +56,8 @@ index 0000000000000..e554c96adc5ad
 +inline constexpr char kBrowserOSAlphaUpdateUrl[] =
 +    "https://cdn.fouwser.com/extensions/update-manifest.alpha.xml";
 +
-+// chrome://browseros host constant
-+inline constexpr char kBrowserOSHost[] = "browseros";
++// chrome://fouwser host constant
++inline constexpr char kBrowserOSHost[] = "fouwser";
 +
 +// URL route mapping for chrome://browseros/* virtual URLs
 +struct BrowserOSURLRoute {

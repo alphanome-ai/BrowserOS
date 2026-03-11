@@ -33,7 +33,7 @@ class CompileModule(CommandModule):
             raise ValidationError(f"Build not configured - args.gn not found: {args_file}")
 
     def execute(self, ctx: Context) -> None:
-        log_info("\n🔨 Building BrowserOS (this will take a while)...")
+        log_info("\n🔨 Building Fouwser (this will take a while)...")
 
         self._create_version_file(ctx)
 
