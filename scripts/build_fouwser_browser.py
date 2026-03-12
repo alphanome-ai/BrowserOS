@@ -455,7 +455,7 @@ def build_local_agent_artifacts(
     agent_dist = agent_monorepo / "apps/agent/dist/chrome-mv3"
     controller_dist = agent_monorepo / "apps/controller-ext/dist"
     server_dist = agent_monorepo / "dist/server"
-    server_bundle_js = server_dist / "sourcemaps/index.js"
+    server_bundle_js = server_dist / "bundle/index.js"
 
     require_file(agent_dist / "manifest.json")
     require_file(controller_dist / "manifest.json")
